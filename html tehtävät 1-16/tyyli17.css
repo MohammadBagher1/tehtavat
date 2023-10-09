@@ -1,0 +1,143 @@
+﻿header {
+    height: 110px;
+    background: #7b2cbf;
+}
+
+
+
+
+
+h1 {
+    color: #240046;
+    padding: 22px 0 0 20px;
+}
+
+
+
+
+
+nav {
+    width: 400px;
+    height: 20px;
+    background: #9d4edd;
+    margin-left: 200px;
+    color: #fff;
+}
+
+
+
+
+
+    nav ul {
+        margin: 0 0 0 -10px;
+    }
+
+
+
+
+
+    nav li {
+        float: left;
+        list-style-type: none;
+        padding: 0 10px;
+    }
+
+
+
+
+
+section {
+    width: 750px;
+    height: 800px;
+    background: #9d4edd;
+    margin-top: -20px;
+}
+
+
+
+
+
+h2 {
+    color: #fff;
+    padding: 10 px 0 0 10px;
+}
+
+
+
+
+
+article {
+    width: 750px;
+    background: #9d4edd;
+    color: #fff;
+}
+
+
+
+
+
+    article p {
+        padding: 18px;
+    }
+
+
+
+
+
+aside {
+    width: 500px;
+    height: 818px;
+    background: #5a189a;
+    float: right;
+    margin-top: -19px;
+}
+
+.sivu {
+    width: 480px;
+    padding-left: 20px;
+    height: 500px;
+}
+
+
+
+
+
+h3 {
+    color: #fff;
+    padding: 10px 0 0 10px;
+}
+
+
+
+
+
+aside article {
+    width: 220px;
+    /*background: #;*/
+    color: #fff
+}
+
+
+
+
+
+footer {
+    height: 40px;
+    background: #9d4edd;
+    margin-top: -16px;
+    color: #fff;
+}
+
+
+
+
+
+    footer p {
+        padding: 10px 0 0 10px;
+    }
+
+
+
+body {
+    background: #3c096c;
+}

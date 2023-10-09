@@ -1,0 +1,83 @@
+﻿﻿div {
+    text-align: center;
+}
+
+hr {
+    height: 1px;
+    background-color: black;
+}
+
+#hrr1 {
+    height: 1px;
+    background-color: deepskyblue;
+}
+
+toka {
+    color: lightgrey;
+}
+
+#eka {
+    float: left;
+}
+
+span {
+    color: grey;
+}
+
+input {
+    border: 1px solid;
+}
+
+<<<<<<< HEAD
+.eka {
+=======
+.eka{
+>>>>>>> 93e0b8c0e032dd71da876a319177d7b3eb57a47f
+    clear: both;
+    float: left;
+}
+
+td:first-child {
+    width: 40px;
+}
+
+table {
+}
+
+fieldset {
+    width: 100px;
+    border-color: deepskyblue;
+    background-color: lightgrey;
+}
+<<<<<<< HEAD
+
+main {
+}
+
+aside {
+    float: right;
+}
+
+article {
+    width: 800px;
+    float: left;
+}
+
+footer {
+    clear: both;
+}
+=======
+main{
+    
+}
+aside{
+    float: right;
+}
+article{
+    width: 800px;
+    float: left;
+}
+footer{
+    clear: both;
+}
+>>>>>>> 93e0b8c0e032dd71da876a319177d7b3eb57a47f

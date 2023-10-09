@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ilmoittautumislomake</title>
+    <link rel="stylesheet" type="text/css" href="PJtyyli4,2.css">
+</head>
+<body>
+    <main>
+        <form action="#" method="post">
+            <div class="form-group">
+                <label for="sukunimi">Sukunimi:</label>
+                <input type="text" id="sukunimi" name="sukunimi" required>
+            </div>
+
+            <div class="form-group">
+                <label for="etunimet">Etunimet:</label>
+                <input type="text" id="etunimet" name="etunimet" required>
+            </div>
+
+            <div class="form-group">
+                <label for="osoitetiedot">Osoitetiedot:</label>
+                <textarea id="osoitetiedot" name="osoitetiedot" rows="4" required></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="puhelin">Puhelin:</label>
+                <input type="tel" id="puhelin" name="puhelin" required>
+            </div>
+
+            <div class="form-group">
+                <label for="sahkoposti">S&ouml;hk&ouml;posti:</label>
+                <input type="email" id="sahkoposti" name="sahkoposti" required>
+            </div>
+
+            <div class="form-group">
+                <label for="tyonantaja">Ty&ouml;nantaja tai oppilaitos:</label>
+                <input type="text" id="tyonantaja" name="tyonantaja" required>
+            </div>
+
+            <div class="form-group">
+                <label for="ammattinimike">Ammattinimike (opiskelijoille: opiskelija):</label>
+                <input type="text" id="ammattinimike" name="ammattinimike" required>
+            </div>
+
+            <div class="form-group">
+                <label for="syntymaaika">Syntym&auml;aika:</label>
+                <input type="date" id="syntymaaika" name="syntymaaika" required>
+            </div>
+
+            <div class="form-group">
+                <label for="hintavaihtoehdot">Tapahtuman hintavaihtoehdot:</label>
+                <select id="hintavaihtoehdot" name="hintavaihtoehdot" required>
+                    <option value="vaihtoehto1">Vaihtoehto 1</option>
+                    <option value="vaihtoehto2">Vaihtoehto 2</option>
+                    <option value="vaihtoehto3">Vaihtoehto 3</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="erikoisruokavalio">Erikoisruokavalio:</label>
+                <input type="text" id="erikoisruokavalio" name="erikoisruokavalio">
+            </div>
+
+            <div class="form-group">
+                <label for="lisatietoja">Lis&auml;tietoja:</label>
+                <textarea id="lisatietoja" name="lisatietoja" rows="4"></textarea>
+            </div>
+
+            <input type="submit" value="Lähetä">
+    </main>
+    </form>
+</body>
+</html>

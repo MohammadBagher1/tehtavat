@@ -1,0 +1,62 @@
+﻿body {
+    width: 50%;
+    margin: 0 auto;
+    background-image: url('koulu.jpg');
+    background-repeat: repeat;
+    background-color: #eee;
+}
+
+main {
+    box-shadow: 10px 5px 5px gray, -.4em 0 .4em black;
+    margin-bottom: 50px;
+    background-color: lightblue;
+}
+
+
+
+label {
+    display: inline-block;
+    width: 300px;
+    font-weight: bold;
+    padding-top: 10px;
+    padding-left: 20px;
+    font-size: 20px;
+}
+
+  
+    label[for='HTML'] {       
+        font-weight: 100;
+        margin-top: -10px;
+    }
+    label[for='CSS'] {
+        font-weight: 100;
+        margin-top: -10px;
+    }
+    label[for='JavaScript'] {
+        font-weight: 100;
+        margin-top: -10px;
+    }
+    label[for='itse'] {
+        font-weight: 100;
+        margin-top: -10px;
+    }
+    label[for='yritys'] {
+        font-weight: 100;
+        margin-top: -10px;
+    }
+    label[for='lahjakortti'] {
+        font-weight: 100;
+        margin-top: -10px;
+    }
+
+    input[type='checkbox'], input[type='radio'], textarea {
+        margin-left: 330px;
+    }
+
+button {
+    width: 170px;
+    padding: 15px;
+    border-radius: 15px;
+    background-color: orange;
+    margin-left: 350px;
+}
