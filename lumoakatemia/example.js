@@ -1,16 +1,20 @@
-function seitsemasPariton() {
-    let taulukko = [6, 7, 2, 4, 3, 8, 1, 9, 0, 3, 5, 7, 3, 6, 8, 2, 4, 3];
-    let laskuri = 0;
-    let haettuLuku;
-    for (var i = 0; i < taulukko.length; i++) {
-        if (taulukko[i] % 2 != 0) {
-            laskuri++;
-            if (laskuri == 7) {
-                console.log("Taulukon " + taulukko +
-                    " seitsem\u00E4s pariton j\u00E4sen on " + taulukko[i]);
-                i = taulukko.length;
-            }
+function poistaPilkkuja(numerojono) {
+    // Erotetaan numerojono pilkulla ja muunnetaan taulukoksi
+    var numerot = numerojono.split(',');
+
+    // Luodaan uusi taulukko ilman pilkkuja
+    var tulostettavatNumerot = [];
+    for (var i = 0; i < numerot.length; i++) {
+        var numero = numerot[i].trim(); // Poistetaan mahdolliset välilyönnit
+        if (!isNaN(numero)) { // Tarkistetaan, että se on numero
+            tulostettavatNumerot.push(numero);
         }
     }
+
+    // Tulostetaan numerot ilman pilkkua
+    console.log(tulostettavatNumerot.join(' '));
 }
-seitsemasPariton(); 
+
+// Käyttöesimerkki
+var syote = '7,3,9,2,44,99,123';
+poistaPilkkuja(syote);    
