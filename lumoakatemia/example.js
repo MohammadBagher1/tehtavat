@@ -1,20 +1,27 @@
-function poistaPilkkuja(numerojono) {
-    // Erotetaan numerojono pilkulla ja muunnetaan taulukoksi
-    var numerot = numerojono.split(',');
+function tarkastaKokonaisluvut(a, b) {
+    try {
+        // Yritet‰‰n muuntaa annetut arvot kokonaisluvuiksi.
+        const lukuA = parseInt(a);
+        const lukuB = parseInt(b);
 
-    // Luodaan uusi taulukko ilman pilkkuja
-    var tulostettavatNumerot = [];
-    for (var i = 0; i < numerot.length; i++) {
-        var numero = numerot[i].trim(); // Poistetaan mahdolliset v‰lilyˆnnit
-        if (!isNaN(numero)) { // Tarkistetaan, ett‰ se on numero
-            tulostettavatNumerot.push(numero);
+        // Tarkistetaan, ovatko luvut NaN-arvoja, mik‰ osoittaa virheellisen muunnoksen.
+        if (isNaN(lukuA) || isNaN(lukuB)) {
+            throw new Error("Et antanut kokonaislukuja");
         }
-    }
 
-    // Tulostetaan numerot ilman pilkkua
-    console.log(tulostettavatNumerot.join(' '));
+        // Vertaillaan, ovatko luvut samat.
+        if (lukuA === lukuB) {
+            return "Antamasi luvut ovat samat.";
+        } else {
+            return "Antamasi luvut eiv‰t ole samat.";
+        }
+    } catch (error) {
+        // Jos tapahtuu virhe (esim. muunnos ei onnistu), palautetaan virheviesti.
+        return error.message;
+    }
 }
 
-// K‰yttˆesimerkki
-var syote = '7,3,9,2,44,99,123';
-poistaPilkkuja(syote);    
+// Esimerkkej‰ k‰ytˆst‰:
+console.log(tarkastaKokonaisluvut(5, 5)); // Tulostaa "Antamasi luvut ovat samat."
+console.log(tarkastaKokonaisluvut(5, "kymmenen")); // Tulostaa "Et antanut kokonaislukuja"
+console.log(tarkastaKokonaisluvut("3", 3)); // Tulostaa "Antamasi luvut ovat samat."
