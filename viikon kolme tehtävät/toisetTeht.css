@@ -1,0 +1,38 @@
+body {
+    background-color: beige;
+    padding: 20px;
+}
+
+table {
+    text-align: right;
+    border-collapse: collapse;
+}
+
+td {
+    width: 20px;
+}
+
+.vieri {
+    width: 500px;
+    padding: 10px;
+    margin: 10px;
+    margin-right: 10px;
+    float: left;
+}
+
+#yksi {
+    background-color: lightblue;
+}
+
+#kaksi {
+    background-color: lime;
+}
+
+#kolme {
+    background-color: lightpink;
+}
+
+#nelja {
+    background-color: yellow;
+}
+

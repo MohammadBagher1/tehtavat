@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <link rel="stylesheet" href="lomakke2.css">
+    <script src="lomakke.js" charset="utf-8"></script>
+    <title></title>
+</head>
+<body>
+    <form class="" action="index.html" method="post">
+        <fieldset>
+            <table>
+                <tr>
+                    <td>
+                        <label for="Etunimi">etunimi:</label>
+                    </td>
+                    <td>
+                        <input type="text" id="enimi" value="">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="Sukunimi">sukunimi:</label>
+                    </td>
+                    <td>
+                        <input type="text" id="snimi" value="">
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+        <fieldset>
+            <p>Tulin kouluun:</p>
+            <input type="radio" name="kulkutapa" value="jalan"> käevelin<br />
+            <input type="radio" name="kulkutapa" value="autolla"> Autolla<br />
+            <input type="radio" name="kulkutapa" value="junalla"> Junalla<br />
+            <input type="radio" name="kulkutapa" value="bussilla"> Bussilla<br />
+            <input type="radio" name="kulkutapa" value="mopolla"> pyörällä           
+        </fieldset>
+        <fieldset>
+            <p>Lempituntini koulussa on:</p>
+            <select id="lempi" name="">
+                <option value="">lempi tunti</option>
+                <option value="Tietotekniikka">ohjelmointi</option>
+                <option value="Kielet">matematikka</option>
+                <option value="Matematiikka">fyysikka</option>
+                <option value="Yhteiskunta-aineet">kemia</option>
+                
+            </select><p></p>
+            <button type="button" name="button" onclick="tarkasta()">Lähetä</button>
+        </fieldset>
+    </form>
+    <p id="v2"></p>
+</body>
+</html>

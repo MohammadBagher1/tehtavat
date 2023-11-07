@@ -4,7 +4,7 @@
     var tuloste = "";
 
     switch (viikonpaivaNumero) {
-                case 1:
+    case 1:
     tuloste = "Maanantai";
     break;
     case 2:

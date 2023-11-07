@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="lomakke.css">
+    <script src="lomakke.js" charset="utf-8"></script>
+</head>
+<body>
+    <h2>Opiskelijan tiedot</h2>
+    <form>
+        <fieldset>
+            <label for="etunimi">Etunimi:</label>
+            <input type="text" name="etunimi" id="etunimi" required>
+            <label for="sukunimi">Sukunimi:</label>
+            <input type="text" name="sukunimi" id="sukunimi" required>
+        </fieldset>
+
+        <fieldset>
+            <p>Tulin kouluun tänään:</p>
+            <input type="radio" name="kulkutapa" value="jalan"> kävelin<br />
+            <input type="radio" name="kulkutapa" value="autolla"> Autolla<br />
+            <input type="radio" name="kulkutapa" value="junalla"> Junalla<br />
+            <input type="radio" name="kulkutapa" value="bussilla"> Bussilla<br />
+            <input type="radio" name="kulkutapa" value="mopolla"> pyörällä<br />
+        </fieldset>
+
+        <fieldset>
+            <p>lempitunti koulussa on:</p>
+            <select name="lempitunti" id="lempitunti">
+                <option value"">Valitse lempitunnin</option>
+                <option value="ohjelmointi">Ohjelmointi</option>
+                <option value="matematiikka">Matematiikka</option>
+                <option value="fysiikka">Fysiikka</option>
+                <option value="kemia">Kemia</option>
+            </select><br />
+            <button type="button" name="button" onclick="tarkasta()">Lähetä</button>
+        </fieldset>
+    </form>
+    <p id="v2"></p>
+</body>
+</html>
+
+
+

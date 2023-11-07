@@ -1,0 +1,31 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+
+
+button {
+    margin-top: 10px;
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+   
+
+fieldset {
+    margin: 0 auto;
+    width: 300px;
+    background-color: antiquewhite;
+}
+#v2{
+    margin:0 auto;
+    width: 300px;
+}

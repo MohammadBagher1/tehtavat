@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="tehtävä1-11.css">
+    <script type="text/javascript" src="tehtava11.js"></script>
+</head>
+<body>
+    <h1>Silmukka -harjoitustehtäviä maanantaiksi 24.8.2020 (1-5) sekä keskiviikoksi (6-11)</h1>
+    <h1>Löytyy myös Moodlesta viikolta 3</h1>
+
+    <article class='tehtava' id='tehtava1'>
+        <h1>Tehtävä 1</h1>
+        <p>
+            Tee ohjelma, joka pyytää käyttäjältä parillista lukua
+            ja tulostaa kaikki parilliset luvut siihen asti poislukien 0.
+        </p>
+        <form class="" action="index.html" method="post">
+            <p>Anna parillinen luku: <input type="text" id='inputTehtava1' value=""></p>
+            <button type="button" name="button" onclick="tulostaParilliset()">Tulosta parilliset</button>
+            <div id='tulosteTehtava1'></div>
+        </form>
+    </article>
+
+    <article class='tehtava' id='tehtava2'>
+        <h1>Tehtävä 2</h1>
+        <p>
+            Kirjoita ohjelma, joka muuntaa käyttäjän antaman sanan salasanaksi
+            siten, että laittaa joka toiseksi kirjaimeksi ison Ö-kirjaimen.
+        </p>
+        <form class="" action="index.html" method="post">
+            <p>Anna sana: <input type="text" id='inputTehtava2' value=""></p>
+            <button type="button" name="button" onclick="muunnaSalasanaksi()">Muuta salasanaksi</button>
+            <div id='tulosteTehtava2'></div>
+        </form>
+    </article>
+
+    <article class='tehtava' id='tehtava3'>
+        <h1>Tehtävä 3</h1>
+        <p>
+            Kirjoita ohjelma, joka tarkastaa, onko annetussa sanassa ö-kirjainta.
+        </p>
+        <form class="" action="index.html" method="post">
+            <p>Anna sana: <input type="text" id='inputTehtava3' value=""></p>
+            <button type="button" name="button" onclick="tarkistaKirjain()">Onko ö-kirjainta</button>
+            <div id='tulosteTehtava3'></div>
+        </form>
+    </article>
+
+    <article class='tehtava' id='tehtava4'>
+        <h1>Tehtävä 4</h1>
+        <p>Kirjoita ohjelma, joka laskee annetun luvun kertoman.</p>
+        <form class="" action="index.html" method="post">
+            <p>Anna luku, josta lasketaan kertoma: <input type="text" id='inputTehtava4' value=""></p>
+            <button type="button" name="button" onclick="laskeKertoma()">Laske kertoma</button>
+            <div id='tulosteTehtava4'></div>
+        </form>
+    </article>
+
+    <article class='tehtava' id='tehtava5'>
+        <h1>Tehtävä 5</h1>
+        <p>
+            Kirjoita ohjelma, joka tulostaa luvut 1-100,
+            mutta tietyt luvut korvataan merkkijonoilla.
+        </p>
+        <button type="button" id="nappiTehtava5" onclick="tulostaNumerotMerkkijonoilla()">Tulosta</button>
+        <div id='tulosteTehtava5'></div>
+    </article>
+
+    <article class='tehtava' id='tehtava6'>
+        <h1>Tehtävä 6</h1>
+        <p>Kirjoita ohjelma, joka tulostaa 10 ensimmäistä numeroa.</p>
+        <button type="button" id="nappiTehtava6" onclick="tulostaEnsimmaisetKymmenenNumerot()">10 Ensimmäistä</button>
+        <div id='tulosteTehtava6'></div>
+    </article>
+
+    <article class='tehtava' id='tehtava7'>
+        <h1>Tehtävä 7</h1>
+        <p>Kirjoita ohjelma, joka laskee 10 ensimmäistä numeroa yhteen.</p>
+        <button type="button" id="nappiTehtava7" onclick="laskeYhteenEnsimmaisetKymmenenNumerot()">Laske 10 ens. yhteen</button>
+        <div id='tulosteTehtava7'></div>
+    </article>
+
+    <article class='tehtava' id='tehtava8'>
+        <h1>Tehtävä 8</h1>
+        <p>
+            Kirjoita ohjelma, joka kysyy käyttäjältä kahta lukua
+            ja laskee ensimmäisen luvun potenssiin toisen luvun verran.
+        </p>
+        <p>Anna korotettava luku: <input type="text" id='inputTehtava8a' value=""> </p>
+        <p>Anna potenssi: <input type="text" id='inputTehtava8b' value=""> </p>
+        <button type="button" id="nappiTehtava8" onclick="laskePotenssi()">Laske</button>
+        <div id='tulosteTehtava8'></div>
+    </article>
+
+    <article class='tehtava' id='tehtava9'>
+        <h1>Tehtävä 9</h1>
+        <p>
+            Kirjoita ohjelma, joka etsii annetuista luvuista suurimman ja pienimmän arvon.
+        </p>
+        <p>Anna 1. luku: <input type="text" id='inputTehtava9a' value=""> </p>
+        <p>Anna 2. luku: <input type="text" id='inputTehtava9b' value=""> </p>
+        <p>Anna 3. luku: <input type="text" id='inputTehtava9c' value=""> </p>
+        <p>Anna 4. luku: <input type="text" id='inputTehtava9d' value=""> </p>
+        <p>Anna 5. luku: <input type="text" id='inputTehtava9e' value=""> </p>
+        <button type="button" id="nappiTehtava9" onclick="etsiSuurinPienin()">Etsi suurin ja pienin</button>
+        <div id='tulosteTehtava9'></div>
+    </article>
+
+    <article class='tehtava' id='tehtava10'>
+        <h1>Tehtävä 10</h1>
+        <p>
+            Muokataan salasalatehtävää siten, että se arpoo kirjaimen Ö:n sijasta tietyistä kirjaimista.
+        </p>
+        <p>
+            Anna muokattava salasana:  <input type="text" id='inputTehtava10' value="">
+            <button type="button" id="nappiTehtava10" onclick="muokkaaSalasana()">Muunna salasanaksi</button>
+            <div id='tulosteTehtava10'></div>
+        </p>
+    </article>
+
+    <article class='tehtava' id='tehtava11'>
+        <h1>Tehtävä 11</h1>
+        <p>
+            Tee ohjelma, joka pyytää käyttäjältä kahta numeroa
+            (jälkimmäisen tulee olla isompi) ja tulostaa tuolla välillä
+            parilliset ja parittomat numerot sekä niiden summat.
+        </p>
+        <p>
+            Anna pienempi numero:  <input type="text" id='inputTehtava11a' value="">
+        </p>
+        <p>
+            Anna isompi numero:  <input type="text" id='inputTehtava11b' value="">
+        </p>
+        <button type="button" id="nappiTehtava11" onclick="naytaParillisetJaParittomat()">Näytä parilliset ja parittomat erikseen sekä niiden summa</button>
+        <div id='tulosteTehtava11'></div>
+    </article>
+</body>
+</html>
