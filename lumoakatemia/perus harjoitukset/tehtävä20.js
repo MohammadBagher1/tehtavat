@@ -1,3 +1,4 @@
+function codeBlock0() { 
 const readline = require('readline');
 const rl = readline.createInterface({
     input: process.stdin,
@@ -17,3 +18,5 @@ rl.question("Anna suorakulmion pituus: ", function (length) {
         rl.close();
     });
 });
+}
+codeBlock0();
